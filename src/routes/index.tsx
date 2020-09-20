@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 
-import App from '../pages/app/App'
+import App from '../pages/app/App';
 
 const Root: React.FC = () => (
   <BrowserRouter>
@@ -10,6 +10,6 @@ const Root: React.FC = () => (
       <Redirect path="*" to="/" />
     </Switch>
   </BrowserRouter>
-)
+);
 
 export default Root;
