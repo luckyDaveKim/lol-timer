@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from '../../logo.svg';
-import './App.css';
+import './DashboardPage.css';
+import SummonerList from './SummonerList';
 
-function App() {
+const DashboardPage: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,9 +19,10 @@ function App() {
         >
           Learn React
         </a>
+        <SummonerList />
       </header>
     </div>
   );
-}
+};
 
-export default App;
+export default DashboardPage;
