@@ -1,12 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-
-import App from '../pages/app/App';
+import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
+import DashboardRoute from './dashboard';
 
 const Root: React.FC = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact component={App} />
+      <DashboardRoute />
       <Redirect path="*" to="/" />
     </Switch>
   </BrowserRouter>
